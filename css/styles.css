@@ -1,0 +1,134 @@
+/* Reset margin and padding for body and html, set height to 100%, and define default font and text color */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Set the default font family */
+    color: black;
+    /* Set the default text color to black */
+}
+
+/* Style for image icons, floating them to the left with specific margins */
+.image-ic {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: -80px;
+}
+
+/* Style for the main container with a background image and center alignment */
+.container {
+    width: 873px;
+    height: 1163px;
+    background-image: url("../images/poster.jpg");
+    /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+/* Style for the content area within the container, using flexbox for layout */
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Style for the top content area, aligning text to the right with a top margin */
+.top-content {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Style for the actor list with bold text and specific font size */
+.actor-list {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Style for the actor list, removing list styles and adjusting top margin */
+.actor-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: -160px;
+}
+
+/* Style for list items within the actor list, setting line height */
+.actor-list li {
+    line-height: 1.5;
+    /* Set line height for list items */
+}
+
+/* Style for content-1 with centered text, small font size, bold weight, and top margin */
+.content-1 {
+    text-align: center;
+    font-size: 13px;
+    /* Set font size to 13px */
+    font-weight: bold;
+    /* Set text to bold */
+    margin-top: 280px;
+}
+
+/* Style for the title with centered text, large font size, bold weight, orange color, red text shadow, and negative top margin */
+.title {
+    text-align: center;
+    font-size: 60px;
+    /* Set font size to 60px */
+    font-weight: bold;
+    /* Set text to bold */
+    color: orange;
+    /* Set text color to orange */
+    text-shadow: 4px 4px red;
+    /* Add a red text shadow with 4px offset */
+    margin-top: -100px;
+}
+
+/* Style for links with orange color */
+a {
+    color: orange;
+    /* Set link color to orange */
+    text-decoration: none;
+    /* Remove default underline from links */
+    transition: color 0.3s ease;
+    /* Add a smooth color transition effect */
+}
+
+/* Style for links on hover, changing color to a darker orange */
+a:hover {
+    color: #d7500c;
+    /* Change link color on hover */
+    text-decoration: none;
+    /* Ensure no underline on hover */
+}
+
+/* Style for visited links, maintaining the orange color */
+a:visited {
+    color: orange;
+    /* Set color of visited links */
+}
+
+/* Style for paragraphs */
+.paragraphs {
+    text-align: center;
+    margin-top: -150px;
+    font-size: 13px;
+    /* Font size to 13px */
+}
+
+/* Style for the last paragraph within the paragraphs class, setting color and font weight */
+.paragraphs p:last-of-type {
+    color: rgb(139, 3, 3);
+    /* Text color to dark red */
+    font-weight: bold;
+    /* Text to bold */
+}
